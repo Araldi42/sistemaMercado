@@ -2,9 +2,10 @@ from flask import Flask, jsonify, request, json
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/ola')
 def teste():
-    return print('ola')
+    
+    return 'ola'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
